@@ -1,0 +1,82 @@
+
+Para mas informacion de como utilizar la plataforma:    http://wiki.sc3.uis.edu.co/
+
+Para cambiar la clave de acceso asignada, digite el comando:    passwd
+
+[japenav@guane ~]$ cd taller1
+[japenav@guane taller1]$ srun hostname
+guane09.uis.edu.co
+[japenav@guane taller1]$ ls
+jacobi  jacobi.cpp  punteros  punteros.cpp
+[japenav@guane taller1]$ nano punteros.cpp
+[japenav@guane taller1]$ gcc punteros.cpp -o punteros
+[japenav@guane taller1]$ time ./punteros
+Antes del intercambio:
+x = 5, y = 10
+Después del intercambio:
+x = 10, y = 5
+
+real    0m0.004s
+user    0m0.000s
+sys     0m0.002s
+[japenav@guane taller1]$ gcc -o1  punteros.cpp -o punteros
+[japenav@guane taller1]$ time ./punteros
+Antes del intercambio:
+x = 5, y = 10
+Después del intercambio:
+x = 10, y = 5
+
+real    0m0.003s
+user    0m0.000s
+sys     0m0.001s
+[japenav@guane taller1]$ gcc -o2  punteros.cpp -o punteros
+[japenav@guane taller1]$ time ./punteros
+Antes del intercambio:
+x = 5, y = 10
+Después del intercambio:
+x = 10, y = 5
+
+real    0m0.003s
+user    0m0.000s
+sys     0m0.001s
+[japenav@guane taller1]$ gcc -o3  punteros.cpp -o punteros
+[japenav@guane taller1]$ time ./punteros
+Antes del intercambio:
+x = 5, y = 10
+Después del intercambio:
+x = 10, y = 5
+
+real    0m0.004s
+user    0m0.001s
+sys     0m0.000s
+[japenav@guane taller1]$ gcc -og  punteros.cpp -o punteros
+[japenav@guane taller1]$ time ./punteros
+Antes del intercambio:
+x = 5, y = 10
+Después del intercambio:
+x = 10, y = 5
+
+real    0m0.004s
+user    0m0.000s
+sys     0m0.001s
+[japenav@guane taller1]$ gcc -ofast  punteros.cpp -o punteros
+[japenav@guane taller1]$ time ./punteros
+Antes del intercambio:
+x = 5, y = 10
+Después del intercambio:
+x = 10, y = 5
+
+real    0m0.004s
+user    0m0.000s
+sys     0m0.002s
+[japenav@guane taller1]$ gcc -oz  punteros.cpp -o punteros
+[japenav@guane taller1]$ time ./punteros
+Antes del intercambio:
+x = 5, y = 10
+Después del intercambio:
+x = 10, y = 5
+
+real    0m0.004s
+user    0m0.001s
+sys     0m0.000s
+[japenav@guane taller1]$
